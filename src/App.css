@@ -1,12 +1,77 @@
 .App {
   text-align: center;
+  background-image: url("./assets/background.png");
+  height: 100vh;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  align-items: center;
 }
-
+button {
+  border: none;
+  outline: none;
+  color: white;
+}
+.product {
+  background-image: url(./assets/socialmedia.png);
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.login {
+  height: 50%;
+  width: 30%;
+  margin-right: 10%;
+  border-radius: 20rem;
+  color: white;
+  background: linear-gradient(107.04deg, #c346d5 52.6%, #501fc1 118.32%);
+  font-size: 20px;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.body > h3 {
+  font-size: 40px;
+}
 
+.body > p {
+  width: 70%;
+  font-size: 20px;
+}
+.body > button {
+  background: linear-gradient(107.04deg, #06d6a0 48.99%, #5794f7 118.32%);
+  width: 70vw;
+  height: 5vh;
+  font-size: 100%;
+  font-size: larger;
+  border-radius: 20rem;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+}
+.first {
+  position: absolute;
+  margin-left: 3%;
+  margin-top: 10%;
+}
+#second {
+  position: absolute;
+  margin-left: 20%;
+}
+#third {
+  position: absolute;
+  margin-left: 60%;
+  margin-top: 10%;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

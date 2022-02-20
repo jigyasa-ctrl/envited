@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import logo from './assets/logo.png';
+import left from './assets/Left.png'
+import middle from './assets/Middle.png'
+import right from './assets/Right.png'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="header">
+        <img src={logo} height="100px" width="100pxx"></img>
+        <button class="login">Login</button>
+      </div>
+      <div className="body">
+        <h3>Facebook Events without Facebook</h3>
+        <p>Easily host and share events with your friends accross social media</p>
+        <button>Create my  next event</button>
+      </div>
+      <div className="product">
+        <img src={left} class="first"></img>
+        <img src={middle} id="second"></img>
+        <img src={right} id="third"></img>
+      </div>
+    </div >
+
   );
 }
 
