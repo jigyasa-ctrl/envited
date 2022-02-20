@@ -1,4 +1,6 @@
-.App {
+.App,
+.Hello,
+.event {
   text-align: center;
   background-image: url("./assets/background.png");
   height: 100vh;
@@ -6,7 +8,57 @@
   color: white;
   align-items: center;
 }
-button {
+#event {
+  text-align: center;
+
+  height: 100vh;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  color: #501fc1;
+  background-color: white;
+  align-items: center;
+}
+.yesnobutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.yesnobutton > img {
+  height: 6rem;
+}
+
+.eventBody > h2 {
+  font-size: 2rem;
+}
+.Hello {
+  width: 100%;
+}
+.info {
+  text-align: left;
+  margin-left: 3rem;
+}
+.eventBody > button {
+  width: 80vw;
+  color: grey;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+.form > input {
+  border-radius: 20rem;
+  height: 30px;
+  width: 70%;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+button,
+Link > button {
   border: none;
   outline: none;
   color: white;
@@ -21,7 +73,30 @@ button {
   height: 40vmin;
   pointer-events: none;
 }
-.login {
+#details,
+#posts {
+  height: 3rem;
+  color: rgb(80, 31, 193);
+  border-radius: 5rem;
+  width: 8rem;
+  font-size: 1rem;
+  font-size: larger;
+}
+#message {
+  color: grey;
+  font-size: 1rem;
+  padding: 10px;
+}
+#details {
+  background-color: rgba(80, 31, 193, 0.5);
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.login,
+#next {
   height: 50%;
   width: 30%;
   margin-right: 10%;
@@ -29,6 +104,15 @@ button {
   color: white;
   background: linear-gradient(107.04deg, #c346d5 52.6%, #501fc1 118.32%);
   font-size: 20px;
+}
+.eventimage {
+  background-image: url("./assets/Cover.png");
+  height: 15rem;
+  background-size: contain;
+}
+#next {
+  height: 3rem;
+  width: 7rem;
 }
 .body {
   display: flex;
@@ -43,7 +127,8 @@ button {
   width: 70%;
   font-size: 20px;
 }
-.body > button {
+.body > button,
+#linkbutton {
   background: linear-gradient(107.04deg, #06d6a0 48.99%, #5794f7 118.32%);
   width: 70vw;
   height: 5vh;
